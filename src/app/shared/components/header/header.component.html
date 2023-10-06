@@ -1,0 +1,14 @@
+<div class="header-container">
+    <div class="navbar-container">
+        <div class="nav-bar" *ngFor="let option of optionsArray">
+            <a *ngIf="option.name !== 'CV'" [routerLink]="option.link" routerLinkActive="active">
+                {{ option.name }}
+            </a>
+            <a *ngIf = "option.name==='CV'" [href]="option.link" target="_blank">
+                {{option.name}}
+            </a>
+        </div>
+    </div>  
+</div>
+
+

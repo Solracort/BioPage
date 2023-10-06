@@ -1,0 +1,23 @@
+
+
+<div class="badge-container">
+  <h3>Languages and Tools:</h3>
+  <div class="techset">
+    <div class="set-row">
+     
+        <div class="tech-card" *ngFor="let badge of badgeArray">
+            <a [href]="badge.link" target="_blank">
+            <div class="badge-title">{{ badge.name }}</div>
+            <div class="badge-pic">
+            <img [src]="badge.source" alt="techpic" width="60" height="60" />
+            </div>
+            </a>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+       
+    
+
