@@ -26,10 +26,13 @@ export class ContactFormComponent {
         const formData = this.miFormulario.value;
   
         this.http.post(this.url, formData)
-          .subscribe(response => {
-            // Maneja la respuesta (por ejemplo, muestra un mensaje de éxito)
-            console.log(response);
-          });
+          .subscribe(
+            response => {
+              console.log('Respuesta correcta: ' , response);
+            }, 
+            error => {
+              console.error('Error:', error)
+            });
       }
     }
   }
