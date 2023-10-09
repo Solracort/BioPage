@@ -10,13 +10,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactFormComponent {
   public miFormulario: FormGroup;
-  private url : string = "https://formsubmit.co/solracort@gmail.com"
+  private url : string = "https://formsubmit.co/a78bd790fc785d613353fa9a167270d6 "
 
   constructor(private formBuilder: FormBuilder,private http: HttpClient) {
     this.miFormulario = this.formBuilder.group({
       nombre: ['', Validators.required],
       email:  ['', [Validators.required, Validators.email]],
-      mensaje:['', Validators.required]
+      mensaje: ['', Validators.required]
     });
   }
 
