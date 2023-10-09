@@ -11,6 +11,10 @@ import { LanguagesComponent } from './pages/languages/languages.component';
 import { BioCardComponent } from './components/bio-card/bio-card.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { ContactComponent } from './pages/contact/contact.component';
     LanguagesComponent,
     BioCardComponent,
     AboutMeComponent,
-    ContactComponent
+    ContactComponent,
+    SocialMediaComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

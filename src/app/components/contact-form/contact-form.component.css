@@ -1,0 +1,29 @@
+.contact-form-container{
+    width:80vw;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.form-button{
+    color: #FFFF;
+    background-color: #2393b9;
+    padding:1%;
+    border-radius:5px;
+}
+@media screen and (min-width: 768px) {
+    .contact-form-container{
+        width:80vw;
+        margin-left:2%;
+        display:flex;
+        justify-content:flex-start;
+        align-items: center;
+    
+    }
+    .form-item{
+        width:50vw;
+    }
+    .wide-input{
+        width:50vw;
+    }
+}

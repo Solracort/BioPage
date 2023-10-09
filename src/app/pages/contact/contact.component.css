@@ -1,0 +1,25 @@
+.contact-container{
+    margin:1.5%;
+    margin-top:10%;
+}
+.primary-container{
+    display:flex;
+    margin-left:2%;
+    margin-top:10%;
+}
+.form-contact{
+    margin-left:2%;
+}
+@media screen and (min-width: 768px) {
+    .contact-container{
+        margin: 5%;
+        margin-top:5%;
+    }
+    .primary-container{
+        display:flex;
+        justify-content: center;
+    }
+    .form-contact{
+        margin:0;
+    }
+}

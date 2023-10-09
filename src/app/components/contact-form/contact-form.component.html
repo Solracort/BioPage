@@ -1,0 +1,42 @@
+<div class="contact-form-container">
+    <form [formGroup]="miFormulario" (ngSubmit)="submitForm()">
+      <div class="form-item">
+        <label for="nombre">Nombre:</label>
+      </div>
+      <div class="form-item">
+        <input class="wide-input" 
+               type="text" 
+               id="nombre" 
+               formControlName="nombre"
+               placeholder="Name" />
+      </div>
+  
+      <div class="form-item">
+        <label for="email">Correo electrónico:</label>
+      </div>
+      <div class="form-item">
+        <input class="wide-input" 
+               type="email" 
+               id="email" 
+               formControlName="email"
+               placeholder="Email" />
+      </div>
+  
+      <div class="form-item">
+        <label for="mensaje">Mensaje:</label>
+      </div>
+      <div class="form-item">
+        <textarea class="wide-input" 
+                  id="mensaje" 
+                  formControlName="mensaje"
+                  placeholder="Comments"></textarea>
+      </div>
+  
+      <div class="form-item">
+        <button class="form-button" type="submit" >Enviar</button>
+      </div>
+    </form>
+  </div>
+  
+
+  
