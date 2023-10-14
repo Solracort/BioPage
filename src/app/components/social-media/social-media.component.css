@@ -1,6 +1,11 @@
 .social-media-container{
     margin:1%;
+    width:20vw;
 }
 .linkedin, .instagram, .twitter{
-    margin:25%;
+    margin:35%;
 }
+@media screen and (min-width: 768px) {
+    .linkedin, .instagram, .twitter{
+        margin:0 50% 15%;
+    }}

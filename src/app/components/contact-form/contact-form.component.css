@@ -2,14 +2,13 @@
     width:80vw;
     display:flex;
     justify-content:center;
-    align-items: center;
 
 }
-.form-button{
-    color: #FFFF;
-    background-color: #2393b9;
-    padding:1%;
-    border-radius:5px;
+.mat-raised-button .form-button {
+    color: #FFFF !important;
+    background-color: #2393b9 !important;
+    padding:1% !important;
+    border-radius:5px !important;
 }
 @media screen and (min-width: 768px) {
     .contact-form-container{
@@ -20,10 +19,10 @@
         align-items: center;
     
     }
-    .form-item{
+    .myform-item{
         width:50vw;
     }
     .wide-input{
-        width:50vw;
+        width:40vw;
     }
 }

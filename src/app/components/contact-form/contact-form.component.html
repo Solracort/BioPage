@@ -1,39 +1,61 @@
 <div class="contact-form-container">
-    <form [formGroup]="miFormulario" (ngSubmit)="submitForm()">
-      <div class="form-item">
-        <label for="nombre">Nombre:</label>
-      </div>
-      <div class="form-item">
-        <input class="wide-input" 
+    <form [formGroup]="miFormulario" method="post" (ngSubmit)="submitForm()">
+      <mat-form-field class="myform-item">
+        <mat-label for="nombre">Nombre:</mat-label>
+      
+        <input matInput 
+               class="wide-input" 
+               
                type="text" 
                id="nombre" 
                formControlName="nombre"
                placeholder="Name" />
-      </div>
+        
+               <span *ngIf="isValidField(miFormulario, 'nombre')" 
+                            style="color: red;">
+                                <small>Debe de ser mínimo 3 letras</small>
+               </span>
+      </mat-form-field>
   
-      <div class="form-item">
-        <label for="email">Correo electrónico:</label>
-      </div>
-      <div class="form-item">
-        <input class="wide-input" 
+      <mat-form-field class="myform-item">
+        <mat-label for="email">Correo electrónico:</mat-label>
+      
+        <input matInput
+               class="wide-input" 
                type="email" 
                id="email" 
                formControlName="email"
                placeholder="Email" />
-      </div>
+
+               <span *ngIf="isValidField(miFormulario, 'email')"
+               style="color: red;">
+                   <small>mensaje email erroneo</small>
+               </span>
+        </mat-form-field>
   
-      <div class="form-item">
-        <label for="mensaje">Mensaje:</label>
-      </div>
-      <div class="form-item">
-        <textarea class="wide-input" 
+      <mat-form-field class="myform-item">
+        <mat-label for="mensaje">Mensaje:</mat-label>
+      
+        <textarea matInput 
+                  class="wide-input"
                   id="mensaje" 
                   formControlName="mensaje"
                   placeholder="Comments"></textarea>
-      </div>
+              <span *ngIf="isValidField(miFormulario, 'mensaje')"
+                    style="color: red;">
+                      <small>Debe ser inferior a 256 caracteres</small>
+              </span>        
+
+      </mat-form-field>
   
-      <div class="form-item">
-        <button class="form-button" type="submit" >Enviar</button>
+      <div class="myform-item">
+        <button  
+                mat-raised-button 
+                class="form-button"
+                style="color: #FFFF !important; background-color: #2393b9 !important; padding: 1% !important; border-radius: 5px !important;"
+                type="submit">
+                Enviar
+        </button>
       </div>
     </form>
   </div>
