@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MaterialModule } from './material/material.module';
     AboutMeComponent,
     ContactComponent,
     SocialMediaComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

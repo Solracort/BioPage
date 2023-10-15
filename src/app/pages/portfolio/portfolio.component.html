@@ -1,0 +1,59 @@
+<div class="portfolio-container">
+    <div class="col-1">
+        <div class="workset"
+             *ngFor="let item of worksCol1"
+        >
+            <a [href]="item.link" target="_blank">
+                <div class="card-container">
+                    <div class="card-title">
+                        <h2>{{item.title}}</h2>
+                    </div>
+                    <div class="card-pic">
+                        <img class="pic-work"
+                             [src]="item.pic" alt="work image"/>
+                    </div>
+                    <div class="card-description">
+                        <p class="desc">
+
+                        </p>
+                    </div>
+                    <div class="card-tech">
+                        <span class="tech-name">Main Technologies: {{item.tech}}</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        
+    </div>
+
+    <div class="vertical-line"></div>
+
+    <div class="col-2">
+        <div class="workset"
+             *ngFor="let item of worksCol2"
+        >
+            <a [href]="item.link" target="_blank">
+                <div class="card-container">
+                    <div class="card-title">
+                        <h2>{{item.title}}</h2>
+                    </div>
+                    <div class="card-pic">
+                        <img class="pic-work"
+                             [src]="item.pic" alt="work image"/>
+                    </div>
+                    <div class="card-description">
+                        <p class="desc">
+
+                        </p>
+                    </div>
+                    <div class="card-tech">
+                        <span class="tech-name">Main Technologies: {{item.tech}}</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</div>
