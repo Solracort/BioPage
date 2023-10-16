@@ -5,14 +5,14 @@
     margin-bottom: 2px;
 }
 .workset{
-    border: 2px #2393b9 solid;
+    /* border: 2px #2393b9 solid; */
     margin:1%;
     border-radius: 5%;
+    width:48vw;
 }
 
 .col-1, .col-2{
     width:43vw;
-    
     margin:0.5%;
     height:auto;
 }
@@ -23,17 +23,17 @@
 }
 .card-container:hover{
     opacity:0.5;
-    background-color: #bddfea ;
+    background-color: #bddfea;
 }
 .pic-work{
-    width: 170px;
-    height: 120px;
+    width: 150px;
+    height: 110px;
 }
 .vertical-line {
     width: 3px; 
     height: 120vh; 
     background-color: #2393b9; 
-    margin: 5px 20px;     
+    margin: 0 10px;     
 }
 .tech-name{
     color: #2393b9;
